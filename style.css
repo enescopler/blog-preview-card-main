@@ -19,8 +19,7 @@
 @font-face {
   font-family: 'Figtree';
   src: url('/assets/fonts/Figtree-VariableFont_wght.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
+  font-style: medium;
   font-display: swap;
 }
 
@@ -34,28 +33,43 @@ body {
 }
 
 .card {
-  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 384px;
-  height: 522px;
-  background-color: var(--white);
-  padding: var(--spacing-300);
-  gap: var(--spacing-300);
   border-radius: 20px;
-  border: 1px solid var(--gray-950);
-  box-shadow:  8px 8px #000000;
+  width:384px;
+  height:522px;
+  background-color: var(--white);
+  gap: 24px;
+  padding: 24px;
+}
+
+.card-image {
+  width:100%;
+  height: 200px;
 }
 
 .blog-image {
-  width: 336px;
-  height: 200px;
-  border-radius: 10px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  border-radius: 10px;
 }
 
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.content-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--gray-950);
+}
