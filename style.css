@@ -32,3 +32,30 @@ body {
   box-sizing: border-box;
   background-color: var(--yellow);
 }
+
+.card {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 384px;
+  height: 522px;
+  background-color: var(--white);
+  padding: var(--spacing-300);
+  gap: var(--spacing-300);
+  border-radius: 20px;
+  border: 1px solid var(--gray-950);
+  box-shadow:  8px 8px #000000;
+}
+
+.blog-image {
+  width: 336px;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
