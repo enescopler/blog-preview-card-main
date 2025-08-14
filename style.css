@@ -46,7 +46,8 @@ body {
   height:522px;
   background-color: var(--white);
   gap: 24px;
-  padding: 24px;
+  padding: 24px 24px;
+  box-shadow: 8px 8px var(--gray-950);
 }
 
 .card-image {
@@ -71,5 +72,39 @@ body {
 .content-title {
   font-size: 24px;
   font-weight: 700;
+  color: var(--gray-950);
+  margin: 0;
+}
+
+.content-title:hover {
+  color: var(--yellow);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.content-text {
+  font-size: 16px;
+  color: var(--gray-500);
+  margin: 0;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+}
+
+.category {
+  padding: 4px 8px;
+  background-color: var(--yellow);
+  border-radius: 8px;
+  color: var(--gray-950);
+  font-weight: bold;
+  font-size: 14px;
+  width: fit-content;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  font-weight: bold;
   color: var(--gray-950);
 }
